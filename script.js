@@ -68,9 +68,12 @@ btnHold.addEventListener('click', function () {
       document
         .queryselector(`.player--${activePlayer}`)
         .classList.remove('.player--winner');
+    } else {
+      //switch to the next player
+      switchPlayer();
     }
-
-    //switch to the next player
-    switchPlayer();
   }
 });
+
+//Reset game functionality
+btnNew.addEventListener('click', function () {});
