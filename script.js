@@ -63,7 +63,7 @@ btnRoll.addEventListener('click', function () {
       //add dice to current sore
       currentScore += dice;
       document.getElementById(`current--${activePlayer}`).textcontent =
-        currentScore;
+        currentScore; //it displays the currentscore of the player , provided the player doesnt roll a 1.
     } else {
       // switch to next player
       switchPlayer();
@@ -79,12 +79,12 @@ btnHold.addEventListener('click', function () {
     scores[activePlayer] += currentScore;
 
     document.getElementById(`score--${activePlayer}`).textContent =
-      scores[activePlayer];
+      scores[activePlayer]; //this displays the sum of the player score after holding.
 
     // 2. check if player's score is >= 100
     if (scores[activePlayer] >= 100) {
       //finish game
-      playing = false;
+      playing = false; // this causes the game to stop.
       diceEl.classList.add('hidden'); // makes the dice element disspear from the screen.
 
       document
