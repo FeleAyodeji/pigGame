@@ -1,23 +1,23 @@
 'use strict';
 // seledcting element
-const player0El = document.querySelector('.player--0');
-const player1El = document.querySelector('.player--1');
-const score0El = document.querySelector('#score--0');
-const score1El = document.getElementById('score--1'); // we can also select an id by using getElementID
-const current0El = document.getElementById('current--0');
-const current1El = document.getElementById('current--1');
+const player0El = document.querySelector('.player--0'); // class selector for player 0
+const player1El = document.querySelector('.player--1'); // class selector for player 1
+const score0El = document.querySelector('#score--0'); //id selector for player 0 score
+const score1El = document.getElementById('score--1'); // we can also select an id by using getElementID . id selctor for player 1 score
+const current0El = document.getElementById('current--0'); //id selector for  the current score of player 0
+const current1El = document.getElementById('current--1'); // id selector for the current score of player 1
 
-const diceEl = document.queryselector('.dice');
-const btnNew = document.querySelector('.btn--new');
-const btnRoll = document.querySelector('.btn--roll');
-const btnHold = document.querySelector('.btn--hold');
+const diceEl = document.queryselector('.dice'); // class selector for the dice image
+const btnNew = document.querySelector('.btn--new'); // class selctor for the new game button
+const btnRoll = document.querySelector('.btn--roll'); // class selector for roll dice button
+const btnHold = document.querySelector('.btn--hold'); // class selector for hold score button
 
 // let scores;
 // let currentScore;
 // let activePlayer;
 // let playing;
 
-let scores, currentScore, active, playing;
+let scores, currentScore, active, playing; // initial declaration of variables
 
 //starting conditions
 const init = function () {
