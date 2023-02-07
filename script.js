@@ -7,19 +7,19 @@ let score1El = document.getElementById('score--1'); // we can also select an id 
 let current0El = document.getElementById('current--0'); //id selector for  the current score of player 0
 let current1El = document.getElementById('current--1'); // id selector for the current score of player 1
 
-let diceEl = document.queryselector('.dice'); // class selector for the dice image
+let diceEl = document.querySelector('.dice'); // class selector for the dice image
 let btnNew = document.querySelector('.btn--new'); // class selctor for the new game button
 let btnRoll = document.querySelector('.btn--roll'); // class selector for roll dice button
 let btnHold = document.querySelector('.btn--hold'); // class selector for hold score button
 
 current0El.textContent = 4;
 
-let scores;
-let currentScore;
-let activePlayer;
-let playing;
+// let scores;
+// let currentScore;
+// let activePlayer;
+// let playing;
 
-let scores, currentScore, active, playing; // initial declaration of variables
+let scores, currentScore, activePlayer, playing; // initial declaration of variables
 
 //starting conditions
 const init = function () {
