@@ -28,10 +28,10 @@ const init = function () {
   activePlayer = 0;
   playing = true;
 
-  score0El.textContent = 0;
-  score1El.textContent = 0;
-  current0El.textContent = 0;
-  current1El.textContent = 0;
+  score0El.textContent = 0; // initial score value
+  score1El.textContent = 0; // initial score value
+  current0El.textContent = 0; // initial current score for player 0
+  current1El.textContent = 0; // initial current score for player 1
 
   diceEl.classList.add('hidden'); //The classList JavaScript allows us to add, remove, replace, toggle or check whether the specified CSS class is present or not
   player0El.classList.remove('.player--winner');
