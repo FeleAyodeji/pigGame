@@ -91,10 +91,10 @@ btnHold.addEventListener('click', function () {
 
       document
         .queryselector(`.player--${activePlayer}`)
-        .classList.add('.player--winner');
+        .classList.add('player--winner');
       document
         .queryselector(`.player--${activePlayer}`)
-        .classList.remove('.player--winner');
+        .classList.remove('player--active');
     } else {
       //switch to the next player
       switchPlayer();
