@@ -12,8 +12,6 @@ let btnNew = document.querySelector('.btn--new'); // class selctor for the new g
 let btnRoll = document.querySelector('.btn--roll'); // class selector for roll dice button
 let btnHold = document.querySelector('.btn--hold'); // class selector for hold score button
 
-current0El.textContent = 4;
-
 // let scores;
 // let currentScore;
 // let activePlayer;
