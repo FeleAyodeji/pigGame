@@ -75,8 +75,8 @@ btnRoll.addEventListener('click', function () {
 btnHold.addEventListener('click', function () {
   if (playing) {
     // 1. add current scoren to active player's score
-    //score[1] = score[1] + currentScore
-    scores[activePlayer] += currentScore;
+
+    scores[activePlayer] += currentScore; //score[1] = score[1] + currentScore
 
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer]; //this displays the sum of the player score after holding.
